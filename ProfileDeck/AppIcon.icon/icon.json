@@ -1,0 +1,40 @@
+{
+  "fill" : {
+    "solid" : "extended-srgb:0.07000,0.09500,0.16000,1.00000"
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "image-name" : "Front-Card-1024.png",
+          "name" : "Front card"
+        }
+      ],
+      "name" : "Front card"
+    },
+    {
+      "layers" : [
+        {
+          "image-name" : "Middle-Card-1024.png",
+          "name" : "Middle card"
+        }
+      ],
+      "name" : "Middle card"
+    },
+    {
+      "layers" : [
+        {
+          "image-name" : "Back-Card-1024.png",
+          "name" : "Back card"
+        }
+      ],
+      "name" : "Back card"
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}

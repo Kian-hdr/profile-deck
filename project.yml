@@ -1,0 +1,73 @@
+name: ProfileDeck
+packages:
+  Sparkle:
+    url: https://github.com/sparkle-project/Sparkle
+    exactVersion: 2.9.6
+options:
+  bundleIdPrefix: space.exlumina
+  deploymentTarget:
+    macOS: '26.0'
+settings:
+  base:
+    SWIFT_VERSION: '6.0'
+    MACOSX_DEPLOYMENT_TARGET: '26.0'
+    ARCHS: arm64
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: '-'
+    ENABLE_HARDENED_RUNTIME: YES
+    ENABLE_APP_SANDBOX: NO
+    GENERATE_INFOPLIST_FILE: YES
+    CURRENT_PROJECT_VERSION: 31
+    MARKETING_VERSION: 0.2.1
+    PROFILE_DECK_UPDATE_FEED_URL: ''
+    PROFILE_DECK_UPDATE_PUBLIC_ED_KEY: ''
+    SWIFT_STRICT_CONCURRENCY: complete
+targets:
+  ProfileDeck:
+    type: application
+    platform: macOS
+    sources:
+      - path: ProfileDeck
+        excludes: [Support/UpdateInfo.plist]
+      - path: THIRD_PARTY_LICENSES
+        type: folder
+        buildPhase: resources
+      - path: THIRD_PARTY_NOTICES
+        type: file
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: space.exlumina.profiledeck
+        PRODUCT_NAME: Profile Deck
+        PRODUCT_MODULE_NAME: ProfileDeck
+        INFOPLIST_FILE: ProfileDeck/Support/UpdateInfo.plist
+        SWIFT_OBJC_BRIDGING_HEADER: ProfileDeck/Support/ProcessActivationBridge.h
+        INFOPLIST_KEY_CFBundleDisplayName: Profile Deck
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.developer-tools
+        INFOPLIST_KEY_NSPrincipalClass: NSApplication
+        INFOPLIST_KEY_LSUIElement: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    dependencies:
+      - package: Sparkle
+      - sdk: libsqlite3.tbd
+      - sdk: Carbon.framework
+  ProfileDeckTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [ProfileDeckTests]
+    dependencies:
+      - target: ProfileDeck
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: space.exlumina.profiledeck.tests
+        TEST_HOST: '$(BUILT_PRODUCTS_DIR)/Profile Deck.app/Contents/MacOS/Profile Deck'
+        BUNDLE_LOADER: '$(TEST_HOST)'
+schemes:
+  ProfileDeck:
+    build:
+      targets:
+        ProfileDeck: all
+        ProfileDeckTests: [test]
+    test:
+      targets: [ProfileDeckTests]
+      gatherCoverageData: true

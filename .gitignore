@@ -1,0 +1,33 @@
+.build/
+build/
+dist/
+.codex/
+ProfileDeck.xcodeproj/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+*.xcresult
+*.log
+# Internal implementation history and local evidence are never source-release material.
+docs/COORDINATION.md
+docs/VERIFICATION.md
+docs/RELEASE-REPORT.md
+# Credentials, account runtime and local release evidence are never source files.
+.env
+.env.*
+*.p8
+*.p12
+*.pem
+*.key
+*.provisionprofile
+*.mobileprovision
+.credentials.json
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+private-evidence/
+profiles/
+*.xcarchive/
+*.dmg
+*.zip
