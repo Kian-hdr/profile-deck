@@ -11,7 +11,8 @@ in this first public release.
 2. From the clean reviewed commit, run `script/release_direct.sh` with an
    installed Developer ID Application identity, an existing Keychain notary
    profile and a fresh output directory outside the repository. The script
-   archives a Release app, signs it with Hardened Runtime and timestamp,
+   archives a Release app, signs Sparkle's embedded helpers and the app
+   inside-out with Hardened Runtime and timestamp,
    submits the app ZIP, staples the accepted app, then creates, signs,
    notarizes and staples the exact DMG. It records source, results and final
    SHA-256 checksums. The script never publishes or modifies a live app.

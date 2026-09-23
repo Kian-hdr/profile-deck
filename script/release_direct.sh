@@ -38,6 +38,25 @@ app="$out/Profile Deck.app"
 ditto --norsrc "$work/ProfileDeck.xcarchive/Products/Applications/Profile Deck.app" "$app"
 test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$app/Contents/Info.plist")" = "$version"
 test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$app/Contents/Info.plist")" = "$build"
+# Xcode can retain upstream ad-hoc signatures in Sparkle's helper binaries.
+# Re-sign Mach-O leaves, then nested bundles, then the outer application.
+while IFS= read -r item; do
+  if /usr/bin/file -b "$item" | /usr/bin/grep -q 'Mach-O'; then
+    codesign --force --options runtime --timestamp \
+      --preserve-metadata=identifier,entitlements,requirements \
+      --sign "$PROFILE_DECK_SIGNING_IDENTITY" "$item" >> "$out/signing.log" 2>&1
+  fi
+done < <(/usr/bin/find "$app/Contents" -type f -print | /usr/bin/sort -r)
+while IFS= read -r bundle; do
+  codesign --force --options runtime --timestamp \
+    --preserve-metadata=identifier,entitlements,requirements \
+    --sign "$PROFILE_DECK_SIGNING_IDENTITY" "$bundle" >> "$out/signing.log" 2>&1
+done < <(/usr/bin/find "$app/Contents" -type d \
+  \( -name '*.framework' -o -name '*.xpc' -o -name '*.appex' -o -name '*.app' \) -print \
+  | /usr/bin/awk '{ print length($0), $0 }' | /usr/bin/sort -rn | /usr/bin/cut -d' ' -f2-)
+codesign --force --options runtime --timestamp \
+  --preserve-metadata=identifier,entitlements,requirements \
+  --sign "$PROFILE_DECK_SIGNING_IDENTITY" "$app" >> "$out/signing.log" 2>&1
 codesign --verify --deep --strict --verbose=2 "$app" > "$out/app-signature.log" 2>&1
 
 ditto -c -k --keepParent "$app" "$work/app-notary.zip"
