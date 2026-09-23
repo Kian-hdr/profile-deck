@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.2 (build 32)
+
+Profile Deck now includes separately composed light and dark app icon
+appearances. The light icon uses a pale blue background; the dark icon keeps
+the navy background. The blue profile cards remain legible in both.
+
 ## 0.2.1 (build 31)
 
 First public direct-download release. Profile Deck provides a native manager,
