@@ -93,6 +93,9 @@ final class NavigationLayoutTests: XCTestCase {
         try await Task.sleep(for: .milliseconds(100))
         for size in [NSSize(width: 1100, height: 740), NSSize(width: 800, height: 560), NSSize(width: 1400, height: 800)] {
             window.setContentSize(size)
+            // WindowServer can clamp the requested size to a smaller CI display.
+            // Compare each destination against the actual size before switching.
+            let initialContentSize = window.contentView!.bounds.size
             for section in [AppSection.diagnostics, .handoffs, .integrations, .activity, .world, .profiles, .settings, .profiles, .settings] {
                 model.section = section
                 try await Task.sleep(for: .milliseconds(60))
@@ -114,8 +117,8 @@ final class NavigationLayoutTests: XCTestCase {
                     }
                 }
                 // A destination's ideal height must not resize the enclosing window.
-                XCTAssertEqual(window.contentView!.bounds.width, size.width, accuracy: 1)
-                XCTAssertEqual(window.contentView!.bounds.height, size.height, accuracy: 1)
+                XCTAssertEqual(window.contentView!.bounds.width, initialContentSize.width, accuracy: 1)
+                XCTAssertEqual(window.contentView!.bounds.height, initialContentSize.height, accuracy: 1)
             }
         }
     }
