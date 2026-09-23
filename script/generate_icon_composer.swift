@@ -26,9 +26,9 @@ func drawLayer(_ name: String, body: () -> Void) throws {
 }
 
 let cards: [(String, CGFloat, NSColor)] = [
-    ("Back-Card-1024.png", 104, NSColor(srgbRed: 0.23, green: 0.35, blue: 0.52, alpha: 1)),
-    ("Middle-Card-1024.png", 52, NSColor(srgbRed: 0.31, green: 0.43, blue: 0.58, alpha: 1)),
-    ("Front-Card-1024.png", 0, NSColor(srgbRed: 0.96, green: 0.75, blue: 0.35, alpha: 1)),
+    ("Back-Card-1024.png", 104, NSColor(srgbRed: 0.15, green: 0.29, blue: 0.49, alpha: 1)),
+    ("Middle-Card-1024.png", 52, NSColor(srgbRed: 0.23, green: 0.41, blue: 0.66, alpha: 1)),
+    ("Front-Card-1024.png", 0, NSColor(srgbRed: 0.34, green: 0.61, blue: 0.91, alpha: 1)),
 ]
 
 for (index, card) in cards.enumerated() {
@@ -37,7 +37,7 @@ for (index, card) in cards.enumerated() {
         NSBezierPath(roundedRect: NSRect(x: 230 + card.1, y: 222 + card.1,
             width: 504, height: 440), xRadius: 66, yRadius: 66).fill()
         guard index == 2 else { return }
-        NSColor(srgbRed: 0.12, green: 0.15, blue: 0.21, alpha: 1).setFill()
+        NSColor(srgbRed: 0.05, green: 0.11, blue: 0.20, alpha: 1).setFill()
         NSBezierPath(ovalIn: NSRect(x: 301, y: 433, width: 100, height: 100)).fill()
         NSBezierPath(roundedRect: NSRect(x: 285, y: 328, width: 132, height: 76),
             xRadius: 38, yRadius: 38).fill()
