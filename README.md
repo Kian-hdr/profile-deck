@@ -2,8 +2,8 @@
 
 <img src="Design/ProfileDeckIconPreview.png" alt="Profile Deck light icon" width="112" height="112"> <img src="Design/ProfileDeckIconPreviewDark.png" alt="Profile Deck dark icon" width="112" height="112">
 
-The app icon uses separate light and dark appearances, plus a system-generated
-monochrome appearance.
+The app icon uses a light blue default and Icon Composer's System Dark
+background for dark appearance, plus a system-generated monochrome appearance.
 
 A native macOS companion for separate ChatGPT/Codex profiles with one shared working environment.
 
@@ -11,9 +11,9 @@ Profile Deck controls the installed official client. Each account keeps independ
 
 ## Install
 
-Profile Deck 0.2.2 (build 32) supports Apple silicon Macs running macOS 26 or
+Profile Deck 0.2.3 (build 33) supports Apple silicon Macs running macOS 26 or
 later. Download the signed and notarized
-[Profile Deck DMG](https://github.com/Kian-hdr/profile-deck/releases/tag/v0.2.2),
+[Profile Deck DMG](https://github.com/Kian-hdr/profile-deck/releases/tag/v0.2.3),
 open it, and move **Profile Deck.app** to Applications. The matching Homebrew cask
 is available from the [Kian-hdr tap](https://github.com/Kian-hdr/homebrew-tap):
 

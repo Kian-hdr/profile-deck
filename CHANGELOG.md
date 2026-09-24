@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.3 (build 33)
+
+The dark app icon now uses Icon Composer's System Dark background in place of
+the custom navy fill. The blue layered cards remain distinct against the
+neutral dark surface. The light and monochrome appearances remain available.
+
 ## 0.2.2 (build 32)
 
 Profile Deck now includes separately composed light and dark app icon

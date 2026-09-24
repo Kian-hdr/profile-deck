@@ -54,7 +54,7 @@ let groups = zip(["Front card", "Middle card", "Back card"], cards.reversed()).m
 let document: [String: Any] = [
     "fill-specializations": [
         ["value": ["solid": "extended-srgb:0.87000,0.92500,1.00000,1.00000"]],
-        ["appearance": "dark", "value": ["solid": "extended-srgb:0.07000,0.09500,0.16000,1.00000"]],
+        ["appearance": "dark", "value": "system-dark"],
     ],
     "groups": groups,
     "supported-platforms": ["squares": "shared", "circles": ["watchOS"]],

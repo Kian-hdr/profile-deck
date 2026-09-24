@@ -1,6 +1,6 @@
 # Direct release process
 
-Profile Deck 0.2.2 is a macOS 26+ Apple silicon direct-download release. Build
+Profile Deck 0.2.3 is a macOS 26+ Apple silicon direct-download release. Build
 from a reviewed clean public source commit. The Mac App Store needs a separate
 sandboxed build and is not produced by this process. In-app updates remain
 disabled until a signed update feed is available.
