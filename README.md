@@ -1,10 +1,8 @@
 # Profile Deck
 
-<img src="Design/ProfileDeckIconPreview.png" alt="Profile Deck light icon" width="112" height="112"> <img src="Design/ProfileDeckIconPreviewDark.png" alt="Profile Deck dark icon" width="112" height="112">
+Manage separate ChatGPT and Codex profiles on your Mac.
 
-A native macOS companion for separate ChatGPT/Codex profiles with one shared working environment.
-
-Profile Deck controls the installed official client. Each account keeps independent authentication and runtime data. The companion provides a profile manager, menu-bar switcher, optional floating tabs, shared-source inspection, supported configuration operations and reviewed handoffs.
+<img src="Design/ProfileDeckIconPreview.png" alt="Profile Deck light icon" width="72">
 
 ## Download
 
@@ -15,6 +13,10 @@ Profile Deck controls the installed official client. Each account keeps independ
 [DMG · Apple silicon · v0.2.3](https://github.com/Kian-hdr/profile-deck/releases/download/v0.2.3/Profile-Deck-0.2.3-arm64.dmg)
 
 [Install with Homebrew](#install) · [Release notes](https://github.com/Kian-hdr/profile-deck/releases/tag/v0.2.3)
+
+A native macOS companion for separate ChatGPT/Codex profiles with one shared working environment.
+
+Profile Deck controls the installed official client. Each account keeps independent authentication and runtime data. The companion provides a profile manager, menu-bar switcher, optional floating tabs, shared-source inspection, supported configuration operations and reviewed handoffs.
 
 ## Install
 
