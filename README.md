@@ -1,18 +1,18 @@
-# Profile Deck
+<h1 align="center">Profile Deck</h1>
 
-Manage separate ChatGPT and Codex profiles on your Mac.
+<p align="center">Manage separate ChatGPT and Codex profiles on your Mac.</p>
 
-<img src="Design/ProfileDeckIconPreview.png" alt="Profile Deck light icon" width="72">
+<p align="center"><img src="Design/ProfileDeckIconPreview.png" alt="Profile Deck light icon" width="72"></p>
 
-## Download
+<h2 align="center">Download</h2>
 
-<p>
+<p align="center">
 <a href="https://github.com/Kian-hdr/profile-deck/releases/download/v0.2.3/Profile-Deck-0.2.3-arm64.dmg"><img src="docs/assets/downloads/download_1.svg" width="240" height="48" alt="Download for macOS"></a>
 </p>
 
-[DMG · Apple silicon · v0.2.3](https://github.com/Kian-hdr/profile-deck/releases/download/v0.2.3/Profile-Deck-0.2.3-arm64.dmg)
+<p align="center"><a href="https://github.com/Kian-hdr/profile-deck/releases/download/v0.2.3/Profile-Deck-0.2.3-arm64.dmg">DMG · Apple silicon · v0.2.3</a></p>
 
-[Install with Homebrew](#install) · [Release notes](https://github.com/Kian-hdr/profile-deck/releases/tag/v0.2.3)
+<p align="center"><a href="#install">Install with Homebrew</a> · <a href="https://github.com/Kian-hdr/profile-deck/releases/tag/v0.2.3">Release notes</a></p>
 
 A native macOS companion for separate ChatGPT/Codex profiles with one shared working environment.
 
