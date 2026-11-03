@@ -2,7 +2,7 @@
 
 <p align="center">Manage separate ChatGPT and Codex profiles on your Mac.</p>
 
-<p align="center"><img src="Design/ProfileDeckIconPreview.png" alt="Profile Deck light icon" width="72"></p>
+<p align="center"><img src="Design/ProfileDeckIconPreviewDark.png" width="72" alt="Profile Deck macOS app icon"></p>
 
 <h2 align="center">Download</h2>
 
