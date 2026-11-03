@@ -2,18 +2,19 @@
 
 <img src="Design/ProfileDeckIconPreview.png" alt="Profile Deck light icon" width="112" height="112"> <img src="Design/ProfileDeckIconPreviewDark.png" alt="Profile Deck dark icon" width="112" height="112">
 
-The app icon uses a light blue default and Icon Composer's System Dark
-background for dark appearance, plus a system-generated monochrome appearance.
-
 A native macOS companion for separate ChatGPT/Codex profiles with one shared working environment.
 
 Profile Deck controls the installed official client. Each account keeps independent authentication and runtime data. The companion provides a profile manager, menu-bar switcher, optional floating tabs, shared-source inspection, supported configuration operations and reviewed handoffs.
 
-<!-- direct-downloads -->
-[![Download macOS DMG · Apple silicon](https://img.shields.io/badge/Download%20macOS%20DMG%20%C2%B7%20Apple%20silicon-24292F?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Kian-hdr/profile-deck/releases/download/v0.2.3/Profile-Deck-0.2.3-arm64.dmg) [![Install with Homebrew](https://img.shields.io/badge/Install%20with%20Homebrew-8A4B20?style=for-the-badge&logo=homebrew&logoColor=white)](#install)
+## Download
 
-[Download macOS DMG · Apple silicon](https://github.com/Kian-hdr/profile-deck/releases/download/v0.2.3/Profile-Deck-0.2.3-arm64.dmg) · [Homebrew instructions](#install) · [Release v0.2.3](https://github.com/Kian-hdr/profile-deck/releases/tag/v0.2.3)
-<!-- /direct-downloads -->
+<p>
+<a href="https://github.com/Kian-hdr/profile-deck/releases/download/v0.2.3/Profile-Deck-0.2.3-arm64.dmg"><img src="docs/assets/downloads/download_1.svg" width="240" height="48" alt="Download for macOS"></a>
+</p>
+
+[DMG · Apple silicon · v0.2.3](https://github.com/Kian-hdr/profile-deck/releases/download/v0.2.3/Profile-Deck-0.2.3-arm64.dmg)
+
+[Install with Homebrew](#install) · [Release notes](https://github.com/Kian-hdr/profile-deck/releases/tag/v0.2.3)
 
 ## Install
 
