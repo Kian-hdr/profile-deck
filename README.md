@@ -9,6 +9,12 @@ A native macOS companion for separate ChatGPT/Codex profiles with one shared wor
 
 Profile Deck controls the installed official client. Each account keeps independent authentication and runtime data. The companion provides a profile manager, menu-bar switcher, optional floating tabs, shared-source inspection, supported configuration operations and reviewed handoffs.
 
+<!-- direct-downloads -->
+[![Download macOS DMG · Apple silicon](https://img.shields.io/badge/Download%20macOS%20DMG%20%C2%B7%20Apple%20silicon-24292F?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Kian-hdr/profile-deck/releases/download/v0.2.3/Profile-Deck-0.2.3-arm64.dmg) [![Install with Homebrew](https://img.shields.io/badge/Install%20with%20Homebrew-8A4B20?style=for-the-badge&logo=homebrew&logoColor=white)](#install)
+
+[Download macOS DMG · Apple silicon](https://github.com/Kian-hdr/profile-deck/releases/download/v0.2.3/Profile-Deck-0.2.3-arm64.dmg) · [Homebrew instructions](#install) · [Release v0.2.3](https://github.com/Kian-hdr/profile-deck/releases/tag/v0.2.3)
+<!-- /direct-downloads -->
+
 ## Install
 
 Profile Deck 0.2.3 (build 33) supports Apple silicon Macs running macOS 26 or
