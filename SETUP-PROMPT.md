@@ -7,15 +7,15 @@ ChatGPT/Codex applications, profile folders, credentials and histories.
 
 1. Confirm this is an Apple silicon Mac running macOS 26 or later. Check the
    repository's latest published stable release, its requirements and its
-   matching `Kian-hdr/tap/profile-deck` Homebrew cask. The official
+   matching `kian-hdr/apps/profile-deck` Homebrew cask. The official
    ChatGPT/Codex app is a separate prerequisite; do not download or alter it
    as part of this installation.
 2. If Profile Deck is already managed by Homebrew, use the verified cask to
    upgrade it. Otherwise, use Homebrew when available:
 
    ```sh
-   brew tap Kian-hdr/tap
-   brew install --cask Kian-hdr/tap/profile-deck
+   brew tap kian-hdr/apps
+   brew install --cask kian-hdr/apps/profile-deck
    ```
 
    Inspect the cask's versioned GitHub DMG URL and SHA-256 before installing.

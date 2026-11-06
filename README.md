@@ -24,10 +24,10 @@ Profile Deck 0.2.3 (build 33) supports Apple silicon Macs running macOS 26 or
 later. Download the signed and notarized
 [Profile Deck DMG](https://github.com/Kian-hdr/profile-deck/releases/tag/v0.2.3),
 open it, and move **Profile Deck.app** to Applications. The matching Homebrew cask
-is available from the [Kian-hdr tap](https://github.com/Kian-hdr/homebrew-tap):
+is available from the [Kian-hdr tap](https://github.com/Kian-hdr/homebrew-apps):
 
 ```sh
-brew install --cask Kian-hdr/tap/profile-deck
+brew install --cask kian-hdr/apps/profile-deck
 ```
 
 For an agent-guided installation, copy the [setup prompt](SETUP-PROMPT.md) into
