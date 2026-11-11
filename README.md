@@ -1,10 +1,13 @@
-<h1 align="center">Profile Deck</h1>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/README_Wordmark_Dark.svg">
+    <img src="docs/assets/README_Wordmark_Light.svg" width="230" height="42" alt="Profile Deck">
+  </picture>
+</p>
 
 <p align="center">Manage separate ChatGPT and Codex profiles on your Mac.</p>
 
 <p align="center"><img src="Design/ProfileDeckIconPreviewDark.png" width="96" alt="Profile Deck macOS app icon"></p>
-
-<h2 align="center">Download</h2>
 
 <p align="center">
 <a href="https://github.com/Kian-hdr/profile-deck/releases/download/v0.2.3/Profile-Deck-0.2.3-arm64.dmg"><img src="docs/assets/downloads/download_1.svg" width="240" height="48" alt="Download for macOS"></a>
@@ -114,8 +117,7 @@ Portable export includes profile labels and desired integration identifiers, not
 
 ## License and distribution
 
-Profile Deck is GPL-3.0-only. Original work is copyrighted by Kian Konrad
-Tajbakhsh. See [LICENSE](LICENSE), [third-party notices](THIRD_PARTY_NOTICES),
+Profile Deck is GPL-3.0-only. Original work is copyrighted by Kian Konrad. See [LICENSE](LICENSE), [third-party notices](THIRD_PARTY_NOTICES),
 and the [dependency inventory](docs/DEPENDENCIES.md). Provider applications
 and independently installed plugins retain their own licenses. No provider
 endorsement is implied. Report security issues through
