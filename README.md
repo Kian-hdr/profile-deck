@@ -7,7 +7,13 @@
 
 <p align="center">Manage separate ChatGPT and Codex profiles on your Mac.</p>
 
-<p align="center"><img src="Design/ProfileDeckIconPreviewDark.png" width="96" alt="Profile Deck macOS app icon"></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="Design/ProfileDeckIconPreviewDark.png">
+    <source media="(prefers-color-scheme: light)" srcset="Design/ProfileDeckIconPreview.png">
+    <img src="Design/ProfileDeckIconPreview.png" width="96" alt="Profile Deck macOS app icon">
+  </picture>
+</p>
 
 <p align="center">
 <a href="https://github.com/Kian-hdr/profile-deck/releases/download/v0.2.3/Profile-Deck-0.2.3-arm64.dmg"><img src="docs/assets/downloads/download_1.svg" width="240" height="48" alt="Download for macOS"></a>
